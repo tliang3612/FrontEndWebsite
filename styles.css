@@ -624,6 +624,7 @@ body.active {
 .social-list {
     display: flex;
     gap: 5px;
+    margin-bottom: 20px;
 }
 
 .social-link {
