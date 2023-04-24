@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 
+        - google fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!--
+        - preload images
+    -->
+    <link rel="preload" as="image" href="./images/background.jpg" />
+</head>
+
+<body>
+    <header class="header active" data-header>
+        <div class="container">
+            <h1>
+                <a href="#" class="logo">Phu's Bakery</a>
+            </h1>
+
+            <!-- Navbar -->
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a href="#" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact-us" class="navbar-link" data-nav-link>Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-btn-group">
+                <button class="search-btn" data-search-btn>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <button class="nav-toggle-btn" data-nav-toggle-btn>
+                    <!-- for the navbar toggle-->
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="hero" style="background-image: url('./images/hero-img.png')">
+                <div class="container">
+                    <div class="hero-container">
+                        <h2 class="h2 hero-title">Welcome to Phu's Bakery!</h2>
+                        <p class="hero-text">
+                            Phu's Bakery is a small bakery located in Rosemead, CA. We
+                            specialize in Asian pastries and desserts.
+                        </p>
+                        <button class="btn">Order Online</button>
+                    </div>
+                </div>
+            </section>
+            <!--
+                popular
+            -->
+            <section class="section section-divider white popular">
+
+                <h2 class="h2 section-title">
+                    Popular <span class="span"> Items </span>
+                </h2>
+
+                <ul class="popular-list has-scrollbar">
+                    <li class="popular-item">
+                        <div class="popular-card">
+
+                            <h3 class="h3 card-title">Egg Tart</h3>
+                            <p class="card-text">Egg tarts come in different shapes and sizes, but the most common type
+                                is the Portuguese egg tart.
+                                It has a crispy and flaky crust, with a slightly burnt and caramelized top that gives it
+                                a unique flavor. The filling is usually made with eggs, sugar, cream, and vanilla,
+                                and is baked at a high
+                                temperature until it sets.</p>
+                            <img src="./images/eggtart.jpg" loading="lazy" alt="Eggtart" class="w-100 card-img" />
+                        </div>
+                    </li>
+
+                    <li class="popular-item">
+                        <div class="popular-card">
+
+                            <h3 class="h3 card-title">Mooncake</h3>
+                            <p class="card-text">Mooncakes have a flaky crust that is made from wheat flour, sugar, and
+                                oil.
+                                The filling is usually sweet and dense, made from a mixture of lotus seed paste, sweet
+                                bean paste,
+                                or sometimes salted egg yolks. Some modern varieties also incorporate flavors like green
+                                tea, black sesame,
+                                or even ice cream.</p>
+
+                            <img src="./images/mooncake.jpg" loading="lazy" alt="Mooncake" class="w-100 card-img" />
+                        </div>
+                    </li>
+
+                    <li class="popular-item">
+                        <div class="popular-card">
+                            <h3 class="h3 card-title">Taro Bread</h3>
+                            <p class="card-text">The bread is made by mixing taro puree into the dough, which gives it a
+                                soft,
+                                fluffy texture and a slightly sweet taste. Taro bread often has a light purple hue,
+                                and is usually dusted with flour or sesame seeds on top for added texture and flavor.
+                                It is also commonly used as a base for sandwiches or toast.
+                            </p>
+
+                            <img src="./images/taro-bread.jpg" loading="lazy" alt="Taro Bread" class="w-100 card-img" />
+                        </div>
+                    </li>
+
+                    <li class="popular-item">
+                        <div class="popular-card">
+
+                            <h3 class="h3 card-title">Fruit Cake</h3>
+                            <p class="card-text">Fruit cake is made with a combination of flour, sugar, eggs, butter,
+                                and a fruit of your choice.
+                                Chunks of fresh or canned mango are added to the batter,
+                                which gives the cake a sweet and tangy flavor and a moist texture. The exterior of the
+                                cake is also decorated in mango slices for a unique look and extra taste.</p>
+
+                            <img src="./images/fruitcake.jpg" loading="lazy" alt="Fruit Cake" class="w-100 card-img" />
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!--
+                About
+            -->
+            <section class="section about" id="about">
+                <div class="container">
+                    <img src="./images/about-us.png" loading="lazy" alt="about us" class="about-img" />
+
+                    <div class="about-content">
+                        <h2 class="h2 section-title">
+                            About <span class="span">Us</span>
+                        </h2>
+
+                        <p class="section-text">
+                            Phu's Bakery is a small, family-owned bakery that has been serving up delectable Asian
+                            pastries, bread,
+                            and desserts since 2014. With a commitment to using only the freshest ingredients,
+                            Phu's Bakery has become a go-to destination for those seeking an authentic experience.
+                            <br></br>
+                            At Phu's Bakery, we take pride in our extensive selection of mouth-watering baked goods. Our
+                            menu features a variety
+                            of Asian-inspired pastries, including egg tarts, bao buns, and mooncakes, as well as a wide
+                            array of bread and desserts.
+                            Our skilled bakers use only the highest quality ingredients, ensuring that each and every
+                            item that
+                            comes out of our ovens is of the utmost quality and taste.
+                            <br></br>
+                            We are passionate about providing our customers with the best possible baked goods and
+                            customer service,
+                            and we take great pride in being a part of the community. Whether you are a long-time
+                            customer or a first-time visitor,
+                            we look forward to sharing our delicious baked goods with you.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section gallery">
+                <h2 class="h2 section-title" id="gallery">
+                    Photo <span class="span">Gallery </span>
+                </h2>
+
+
+                <ul class="gallery-list">
+                    <div class="gallery-main-item" data-gallery-main-box>
+                        <img src="images/eggtart.jpg" id="main-img">
+                    </div>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-1.jpg" alt="gallery-1" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-2.jpg" alt="gallery-2" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-3.jpg" alt="gallery-3" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-4.jpg" alt="gallery-4" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-5.jpg" alt="gallery-5" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-6.jpg" alt="gallery-6" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-7.jpg" alt="gallery-7" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img data-gallery-img src="./images/gallery-8.jpg" alt="gallery-8" loading="lazy"
+                            class="w-100" />
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Reviews -->
+
+            <section class="section section-divider white reviews">
+                <div class="container">
+                    <h2 class="h2 section-title"> Reviews on
+                        <button onclick="window.location.href='https://www.yelp.com/biz/phus-bakery-rosemead';"
+                            class="reviews-button"> Yelp! </button>
+                    </h2>
+
+                    <ul class="reviews-list has-scrollbar">
+                        <li class="reviews-item">
+                            <div>
+                                <h3 class="h4 reviews-name">Ares M.</h3>
+                            </div>
+
+                            <p class="reviews-text">
+                                "Besides their mooncakes, their bolo bun, taro pastry, and egg tarts are super delicious
+                                too!!
+                                One best thing is that they are all very lighty sweet but have the perfect taste to it.
+                                Feels less guilty to eat all these goodies. "
+                            </p>
+
+                            <div class="rating-stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </li>
+
+                        <li class="reviews-item">
+
+                            <div>
+                                <h3 class="h4 reviews-name">Christie C.</h3>
+                            </div>
+
+                            <p class="reviews-text">
+                                "The Portuguese egg Tarts are very very good. The crust is light and flaky and the
+                                custard is smooth, creamy and not very sweet.
+                                Just be careful if you eat in the car just like I did and I got the crust all over my
+                                clothes and my car seat ( not fun)"
+                            </p>
+
+                            <div class="rating-stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </li>
+
+                        <li class="reviews-item">
+
+                            <div>
+                                <h3 class="h4 reviews-name">Candy C.</h3>
+                            </div>
+
+                            <p class="reviews-text">
+                                "If you like egg tarts, this place will not fail you. I always order by dozens so is
+                                best to call ahead.
+                                I am a taro lover and their taro pastry so far is the best I have tried in SGV. If it
+                                makes me crave for more,
+                                that means they are really good."
+                            </p>
+
+                            <div class="rating-stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </li>
+
+                        <li class="reviews-item">
+
+                            <div>
+                                <h3 class="h4 reviews-name">Patrick L.</h3>
+                            </div>
+
+                            <p class="reviews-text">
+                                "Wife and I were looking for a bakery with egg tarts in the SGV, and was recommended
+                                here
+                                by our friend.
+                                And boy ol' boy the egg tarts did not disappoint. The crust is flakey on the outside.
+                                The filling is smooth and creamy but not overwhelmingly sweet.
+                            </p>
+
+                            <div class="rating-stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+
+            <div class="footer">
+                <div class="container">
+
+                    <div class="footer-socials">
+                        <a href="#" class="logo">Phu's Bakery</a>
+                        <p class="footer-text">
+                            Follow our socials!
+                        </p>
+
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title" id="contact-us">Contact Info</p>
+                        </li>
+
+                        <li>
+                            <p class="footer-list-item">(626) 927-9398</p>
+                        </li>
+
+                        <li>
+                            <p class="footer-list-item">example_email@gmail.com</p>
+                        </li>
+
+                        <li>
+                            <p class="footer-list-item">
+                                9008 Garvey Ave Ste D Rosemead, CA 91770
+                            </p>
+                        </li>
+
+                        <li> </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Hours of Operation</p>
+                        </li>
+
+                        <li>
+                            <p class="footer-list-item">Mon Closed</p>
+                        </li>
+
+                        <li>
+                            <p class="footer-list-item">Tuesday-Sunday 8:00 AM - 5:00 PM</p>
+                        </li>
+                    </ul>
+
+                    <div class="footer-form">
+
+                        <p class="footer-list-title">Enter your email to be notified for special offers!</p>
+
+                        <div class="input-wrapper">
+
+                            <input type="text" name="full_name" required placeholder="Your Name" 
+                                class="input-field">
+
+                            <input type="email" name="email_address" required placeholder="Email" 
+                                class="input-field">
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="#top" class="back-top-btn" data-back-top-btn>
+                <ion-icon name="chevron-up"></ion-icon>
+            </a>
+
+        </article>
+    </main>
+
+    <script src="script.js" defer></script>
+    
+    <!-- 
+        - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
